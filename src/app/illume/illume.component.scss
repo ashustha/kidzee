@@ -1,0 +1,28 @@
+@import '../../scss/mixins';
+
+#illume{
+	background-color: #E6E6E6;
+	padding: 50px 0;
+}
+
+.title h1{
+	@include mainTitle;
+	margin-bottom: 50px;
+	font-size: 30px;
+}
+
+.block-content .item{
+	margin-bottom: 20px;
+}
+
+.block-content .item h2{
+	font-family: $secondaryFont;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.block-content .item p{
+	font-family: $ternaryFont;
+	font-size: 18px;
+	margin-bottom: 10px;
+}

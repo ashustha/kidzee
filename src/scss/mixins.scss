@@ -1,0 +1,6 @@
+@import 'variables';
+
+@mixin mainTitle {
+	font-family: $primaryFont;
+	color: $primaryColor;
+}

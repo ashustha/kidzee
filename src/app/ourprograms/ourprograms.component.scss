@@ -1,0 +1,112 @@
+
+@import '../../scss/mixins';
+
+#programs{
+	position: relative;
+	padding: 50px 0;
+	padding-top: 0;
+}
+
+.rectangle{
+	position: absolute;
+	background: $primaryColor;
+	height: 60px;
+	width: 200px;
+	border-radius: 50px;
+	bottom:100px;
+	left: -90px;
+	-ms-transform: rotate(-40deg); /* IE 9 */
+    -webkit-transform: rotate(-40deg); /* Safari */
+    transform: rotate(-40deg);
+    -webkit-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.24);
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.24);
+}
+.rectangle2{
+	position: absolute;
+	background: $primaryColor;
+	height: 60px;
+	width: 200px;
+	border-radius: 50px;
+	bottom: 115px;
+	left: -135px;
+	-ms-transform: rotate(-40deg); /* IE 9 */
+    -webkit-transform: rotate(-40deg); /* Safari */
+    transform: rotate(-40deg);
+    -webkit-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.24);
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.24);
+}
+
+.title h1{
+	@include mainTitle;
+	font-size: 46px;
+	margin-bottom: 60px;
+}
+
+.childern-image img{
+	width: 400px;
+}
+
+.card{
+	margin-bottom: 20px;
+	background: #fff;
+	padding: 30px 20px;
+	border-radius: 20px;
+	color: $secondaryColor;
+	-webkit-transition: all 1s; /* Safari */
+	transition: all 0.5s;
+	font-family: ternaryFont;
+	border-color: transparent;
+	-webkit-box-shadow: -2px 2px 10px 1px rgba(140,140,140,0.11);
+	-moz-box-shadow: -2px 2px 10px 1px rgba(140,140,140,0.11);
+	box-shadow: -2px 2px 10px 1px rgba(140,140,140,0.11);
+}
+
+.card:hover{
+	background: $primaryColor;
+	color:#fff;
+	cursor:pointer;
+}
+
+.card .card-image .grey{
+	display: none;
+}
+
+.card:hover .card-image{
+	background: #fff;
+}
+
+.card:hover .card-image .grey{
+	display: block;
+}
+
+.card:hover .card-image .white{
+	display: none;
+}
+
+.mt-50{
+	margin-top: 50px;
+}
+
+
+.card h3{
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.card p{
+	font-size: 18px;
+}
+
+.card-image{
+    background: $primaryColor;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,78 @@
+@import '../../scss/fonts';
+
+#header{
+	background:url("../../assets/img/headerbg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 800px;
+
+}
+
+.header-content{
+	// display: flex;
+ //    flex-direction: row;
+ //    justify-content: space-between;
+    height: 500px;
+    // align-items: flex-end;
+}
+
+.banner-text{
+	align-self: center;
+	color: #fff;
+}
+
+.banner-text h1{
+	font-size: 56px;
+	margin-bottom: 20px;
+	font-family: primaryFont;
+}
+
+.banner-text h2{
+	margin-bottom: 20px;
+	font-family: secondaryFont;
+	font-size: 20px;
+	max-width: 400px;
+}
+
+.header-image{
+	align-self:flex-end;
+}
+
+.header-image img{
+	max-width: 450px;
+}
+
+nav>a{
+	font-family: ternaryFont;
+	color: #fff;
+	text-transform: uppercase;
+	margin-right: 50px;
+}
+
+nav>a:last-child{
+	margin-right: 0px;
+	padding-right: 0px!important;
+}
+
+@media only screen and(max-width: 768px){
+	nav>a{
+		margin-right: 0px;
+	}
+
+	.banner-text h1{
+		font-size: 40px;
+	}
+	
+	.banner-text h2{
+		font-size: 16px;
+	}
+}
+
+nav>a:hover{
+	text-decoration: none;
+}
+
+.logo img{
+	width: 200px;
+}
